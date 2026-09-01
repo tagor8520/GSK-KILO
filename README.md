@@ -1,13 +1,13 @@
 <div align="center">
 
 ```
-  ┌──────────────────────────────────────────────────────────────────────────┐
+  ┌───────────────────────────────────────────────────────────────────────────┐
   │  RX ░▒▓   CH-A · KILO   CH-B · GENSPARK   STATUS ● LIVE   PORT 4380  ▓▒░  │
-  ├──────────────────────────────────────────────────────────────────────────┤
+  ├───────────────────────────────────────────────────────────────────────────┤
   │  PRESET   genspark-llm-proxy/claude-sonnet-4-6                            │
   │  ROUTE    direct HTTPS · 0 ms added latency · 0 secrets persisted         │
   │  CONTROL  │ target │ sync │ validate │ test │ logs │ stop │ exit │  v1.0  │
-  └──────────────────────────────────────────────────────────────────────────┘
+  └───────────────────────────────────────────────────────────────────────────┘
 ```
 
 # **GSK-KILO**
@@ -83,7 +83,7 @@ GSK-KILO is a **local-only** dashboard for pairing **[Kilo Code](https://kilocod
 ## Before / After
 
 ```
-┌─ BEFORE GSK-KILO ──────────────────────────────┐   ┌─ AFTER GSK-KILO ──────────────────────────────────┐
+┌─ BEFORE GSK-KILO ───────────────────────────────┐   ┌─ AFTER GSK-KILO ───────────────────────────────────┐
 │  edit ~/.config/kilo/kilo.jsonc by hand         │   │  one-click SYNC from a dashboard                   │
 │  copy/paste API keys across 4 config files      │ → │  zero-secret invariant enforced & test-asserted    │
 │  guess which port the dashboard is on           │   │  single-instance lock, auto port fallback          │
@@ -104,7 +104,7 @@ GSK-KILO is a **local-only** dashboard for pairing **[Kilo Code](https://kilocod
   │  ● portable profiles                │
   │  ● status + credit balance          │
   │  ● notification center              │
-  │  ● graceful lifecycle              │
+  │  ● graceful lifecycle               │
   └─────────────────────────────────────┘
 ```
 
@@ -354,14 +354,6 @@ The zero-secret invariant is a contract, not an aspiration:
 Found a vulnerability? Follow the private disclosure process in [`SECURITY.md`](SECURITY.md).
 
 ---
-
-## Roadmap
-
-- [ ] Multi-user CLI profile directory
-- [ ] Pluggable upstream providers (beyond GenSpark)
-- [ ] Published `Dockerfile` + CI-built multi-arch images
-- [ ] Optional Tauri / Electron desktop wrapper
-- [ ] Internationalised dashboard (i18n)
 
 ---
 
