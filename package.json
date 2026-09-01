@@ -1,0 +1,29 @@
+{
+  "name": "genspark_api",
+  "version": "1.0.0",
+  "description": "GSK-KILO Local Control Plane Core (Bun Runtime)",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "bun src/index.js",
+    "dev": "bun --watch src/index.js",
+    "test": "bun test",
+    "build": "bun build ./src/index.js --compile --outfile ./dist/gsk-kilo-control-plane",
+    "db:migrate": "bun -e 'const { getDatabase } = require(\"./src/db/database\"); const { runMigrations } = require(\"./src/db/migrations\"); runMigrations(getDatabase());'"
+  },
+  "keywords": [
+    "genspark",
+    "kilo",
+    "control-plane",
+    "bun",
+    "sqlite",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^5.2.1"
+  }
+}
